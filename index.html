@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42 - Digital Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#F7FAFC] text-[#4A5568] font-['Space_Mono']">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 md:px-16 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#6C63FF]">
+                <span class="glitch" data-text="42">42</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-[#6C63FF] transition-colors">Home</a>
+                <a href="#about" class="hover:text-[#6C63FF] transition-colors">About</a>
+                <a href="#projects" class="hover:text-[#6C63FF] transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-[#6C63FF] transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-[#6C63FF] transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-between px-6 md:px-16 py-20">
+        <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                I am <span class="text-[#6C63FF]">42</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8">The Answer to Digital Innovation</p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-2xl hover:text-[#6C63FF] transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-2xl hover:text-[#6C63FF] transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl hover:text-[#6C63FF] transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hidden lg:block w-1/2">
+            <img src="assets/developer.svg" alt="Digital Art" class="w-full">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 md:px-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <p class="mb-4">Hello! I'm 42, a full-stack developer passionate about creating digital experiences that make a difference. With expertise in modern web technologies and a keen eye for design, I transform ideas into reality.</p>
+                    <h3 class="text-xl font-bold mb-3">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">AWS</span>
+                        <span class="badge">Docker</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="assets/vc.svg" alt="42's Profile" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 md:px-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <div class="project-thumbnail variant-1"></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Project Alpha</h3>
+                    <div class="tech-stack flex flex-wrap gap-2 mb-4">
+                        <span class="badge">React</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">MongoDB</span>
+                    </div>
+                    <p class="mb-4 text-gray-600">A futuristic web application for data visualization</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-primary">Live Demo</a>
+                        <a href="#" class="btn-outline">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail variant-2"></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Project Beta</h3>
+                    <div class="tech-stack flex flex-wrap gap-2 mb-4">
+                        <span class="badge">Vue.js</span>
+                        <span class="badge">Firebase</span>
+                        <span class="badge">TailwindCSS</span>
+                    </div>
+                    <p class="mb-4 text-gray-600">Real-time collaboration platform</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-primary">Live Demo</a>
+                        <a href="#" class="btn-outline">Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail variant-3"></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Project Gamma</h3>
+                    <div class="tech-stack flex flex-wrap gap-2 mb-4">
+                        <span class="badge">Python</span>
+                        <span class="badge">TensorFlow</span>
+                        <span class="badge">Flask</span>
+                    </div>
+                    <p class="mb-4 text-gray-600">AI-powered image recognition system</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="btn-primary">Live Demo</a>
+                        <a href="#" class="btn-outline">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 md:px-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date text-lg font-semibold text-[#6C63FF]">2022 - Present</div>
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold">Senior Developer</h3>
+                        <h4 class="text-lg text-gray-700">Tech Corp</h4>
+                        <p class="text-gray-600">Leading development of cloud-native applications and mentoring junior developers.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date text-lg font-semibold text-[#6C63FF]">2020 - 2022</div>
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold">Full Stack Developer</h3>
+                        <h4 class="text-lg text-gray-700">Digital Solutions Inc</h4>
+                        <p class="text-gray-600">Developed and maintained multiple client projects using modern web technologies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date text-lg font-semibold text-[#6C63FF]">2018 - 2020</div>
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold">Frontend Developer</h3>
+                        <h4 class="text-lg text-gray-700">StartUp Hub</h4>
+                        <p class="text-gray-600">Created responsive and interactive user interfaces for web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 md:px-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <form class="contact-form md:w-1/2 mb-8 md:mb-0">
+                    <div class="form-group mb-4">
+                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6C63FF]">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" placeholder="Your Email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6C63FF]">
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea placeholder="Your Message" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#6C63FF]"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+                <div class="contact-info md:w-1/2">
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-envelope text-[#6C63FF]"></i>
+                        <p>42@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt text-[#6C63FF]"></i>
+                        <p>Digital Universe, Web 3.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">&copy; 2024 42. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-2xl hover:text-[#6C63FF] transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-2xl hover:text-[#6C63FF] transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl hover:text-[#6C63FF] transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
